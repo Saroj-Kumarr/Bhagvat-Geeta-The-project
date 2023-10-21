@@ -2,7 +2,6 @@ import React from "react";
 import left from "./Images/left.jpg";
 import logo from './Images/logo4.png';
 import {GiFlowerEmblem,GiFlowerStar,GiSunflower,GiSpotedFlower } from 'react-icons/gi'
-import {IoMdFlower,IoFlowerSharp} from 'react-icons/io';
 import {PiFlowerLotusFill} from 'react-icons/pi'
  
 // GiFlowerEmblem GiFlowerStar GiSunflower GiSpotedFlower  PiFlowerLotusFill
