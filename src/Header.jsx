@@ -1,5 +1,5 @@
 import React from "react";
-import left from "./Images/left.jpg";
+import left from "./Images/left.png";
 import logo from './Images/logo4.png';
 import {GiFlowerEmblem,GiFlowerStar,GiSunflower,GiSpotedFlower } from 'react-icons/gi'
 import {PiFlowerLotusFill} from 'react-icons/pi'
@@ -8,7 +8,7 @@ import {PiFlowerLotusFill} from 'react-icons/pi'
 
 function Header() {
   return (
-    <div className="krishna flex justify-between items-center px-10">
+    <div className="krishna flex justify-between items-center px-10 bg-yellow-200">
       <div>
         <img className="h-28" src={left} alt="flute" />
       </div>
