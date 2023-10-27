@@ -1,4 +1,4 @@
-.krishna{
+.krishna {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -14,7 +14,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width:100%;
+  width: 100%;
   font-weight: 600;
 }
 
@@ -68,3 +68,7 @@
   top: 0;
 }
 
+
+.scroll-container::-webkit-scrollbar { 
+  width: 12px; 
+} 

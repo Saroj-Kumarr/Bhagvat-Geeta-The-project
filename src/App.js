@@ -2,12 +2,13 @@ import Header from "./Header";
 import "./App.css";
 import Footer from "./Footer";
 import Body from "./Body";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <div>
       <Header />
-      <Body/>
+    <Outlet/>
       <Footer />
     </div>
   );
