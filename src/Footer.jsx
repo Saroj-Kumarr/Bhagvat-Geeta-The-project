@@ -3,7 +3,7 @@ import { FaGithubSquare,FaLinkedin,FaInstagramSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer flex justify-center  bg-yellow-200  border-2  p-4 absolute w-full -bottom-20 ">
+    <div className="footer flex justify-center  bg-black text-white  p-4 absolute w-full -bottom-20">
       <div className="flex">
         <div className="flex relative -top-[3px]">
           <a href="https://github.com/Saroj-Kumarr">
