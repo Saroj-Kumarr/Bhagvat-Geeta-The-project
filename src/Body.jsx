@@ -50,13 +50,12 @@ function Body() {
 
   return (
     <>
-      <h1 className="button-85 text-center text-lg">
-        {" "}
+      <h1 className="button-85 text-center text-lg max-[600px]:relative max-[600px]:w-[123%] max-[600px]:relative max-[600px]:left-6">
         <AiFillCaretLeft className="inline relative -top-[1px] mr-1" />
         Choose favorite your category <AiFillCaretRight className="inline" />
       </h1>
 
-      <div className="flex items-center justify-center flex-wrap -mt-9 w-[87%] ml-24">
+      <div className="flex items-center justify-center flex-wrap -mt-9 w-[87%] ml-24 max-[600px]:relative max-[600px]:-left-10">
         {QuoteTypes.map((obj, index) => {
           return (
             <Link to={"/" + obj.type}>

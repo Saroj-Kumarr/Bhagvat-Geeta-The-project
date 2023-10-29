@@ -8,7 +8,7 @@ import {PiFlowerLotusFill} from 'react-icons/pi'
 
 function Header() {
   return (
-    <div className="krishna flex justify-between items-center px-10 bg-black">
+    <div className="krishna flex justify-between items-center px-10 bg-black max-[600px]:relative max-[600px]:w-[113%]">
       <div>
         <img className="h-24" src={left} alt="flute" />
       </div>

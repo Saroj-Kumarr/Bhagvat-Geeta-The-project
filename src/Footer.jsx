@@ -1,21 +1,20 @@
 import React from "react";
-import { FaGithubSquare,FaLinkedin,FaInstagramSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footer flex justify-center  bg-black text-white  p-4 absolute w-full -bottom-20">
+    <div className="footer flex justify-center  bg-black text-white  p-4 absolute w-full -bottom-20 max-[600px]:hidden">
       <div className="flex">
         <div className="flex relative -top-[3px]">
           <a href="https://github.com/Saroj-Kumarr">
-          <FaGithubSquare className="m-1 text-2xl rounded-xl" />
+            <FaGithubSquare className="m-1 text-2xl rounded-xl" />
           </a>
           <FaLinkedin className="m-1 text-sky-500 text-2xl rounded-xl" />
           <FaInstagramSquare className="m-1 text-pink-600 text-2xl rounded-xl" />
         </div>
         <div className="font-bold">
-          | Developed by ❤️ Saroj <span className="text-emerald-500">
-            Kumar
-          </span>{" "}
+          | Developed by ❤️ Saroj{" "}
+          <span className="text-emerald-500">Kumar</span>
         </div>
       </div>
     </div>
