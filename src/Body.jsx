@@ -9,7 +9,7 @@ import pic5 from "./Images/pic5.jpg";
 import pic6 from "./Images/pic6.jpg";
 import pic7 from "./Images/pic7.jpg";
 import pic8 from "./Images/pic8.jpg";
-import {AiFillCaretLeft,AiFillCaretRight} from 'react-icons/ai';
+import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
 function Body() {
   const QuoteTypes = [
@@ -35,25 +35,28 @@ function Body() {
       imgsrc: pic5,
     },
     {
-      type: "Munshi Premchand",
+      type: "Life",
       imgsrc: pic6,
     },
     {
-      type: "Life",
+      type: "Education",
       imgsrc: pic7,
     },
     {
-      type: "Motivational",
+      type: "Abdul kalam",
       imgsrc: pic8,
     },
   ];
 
   return (
     <>
-    
-    <h1 className="button-85 text-center text-lg"> <AiFillCaretLeft className="inline relative -top-[1px] mr-1"/>Choose favorite your category <AiFillCaretRight className="inline"/></h1>
+      <h1 className="button-85 text-center text-lg">
+        {" "}
+        <AiFillCaretLeft className="inline relative -top-[1px] mr-1" />
+        Choose favorite your category <AiFillCaretRight className="inline" />
+      </h1>
 
-    <div className="flex items-center justify-center flex-wrap -mt-9 w-[87%] ml-24">
+      <div className="flex items-center justify-center flex-wrap -mt-9 w-[87%] ml-24">
         {QuoteTypes.map((obj, index) => {
           return (
             <Link to={"/" + obj.type}>
@@ -61,7 +64,7 @@ function Body() {
             </Link>
           );
         })}
-    </div>
+      </div>
     </>
   );
 }

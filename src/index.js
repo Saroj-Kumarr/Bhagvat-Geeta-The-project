@@ -10,8 +10,8 @@ import Gautam from "./Gautam";
 import Swami from "./Swami";
 import Osho from "./Osho";
 import Life from "./Life";
-import Munshi from "./Munshi";
 import Motivation from "./Motivation";
+import Abdul from "./Abdul";
 
 const appRouter = createBrowserRouter([
   {
@@ -43,15 +43,15 @@ const appRouter = createBrowserRouter([
         element: <Osho />,
       },
       {
-        path: "/Munshi Premchand",
-        element: <Munshi />,
+        path: "/Abdul kalam",
+        element: <Abdul />,
       },
       {
         path: "/Life",
         element: <Life />,
       },
       {
-        path: "/Motivational",
+        path: "/Education",
         element: <Motivation />,
       },
     ],

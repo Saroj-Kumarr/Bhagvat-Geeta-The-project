@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import { swami } from "./Dataset";
+import { abdul } from "./Dataset";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import border from "../src/Images/border.jpg";
 
-function Swami() {
+function Abdul() {
   const [quotes, setQuotes] = useState("");
 
-  const swamiQuotes = swami;
+  const AbdulQuotes = abdul;
 
-  function getRandomQuote(swamiQuotes) {
-    const x = Math.floor(Math.random() * 50 + 1);
+  function getRandomQuote(AbdulQuotes) {
+    const x = Math.floor(Math.random() * 100 + 1);
 
-    const quote = swamiQuotes.filter((obj) => {
+    const quote = AbdulQuotes.filter((obj) => {
       return obj.id == x;
     });
 
@@ -29,7 +29,7 @@ function Swami() {
               alt="border"
             />
 
-            <h1 className="relative text-[#ECF4EB] -top-48 mx-16 left-2">
+            <h1 className="relative text-[#A2678A] -top-48 mx-16 left-2">
               <FaQuoteLeft className="inline relative -top-2 text-[#01F479]" />{" "}
               {quotes[0].quote}
               <FaQuoteRight className="inline relative top-[3px] text-[#01F479]" />
@@ -37,7 +37,7 @@ function Swami() {
           </div>
         )}
         <button
-          onClick={() => getRandomQuote(swamiQuotes)}
+          onClick={() => getRandomQuote(AbdulQuotes)}
           className="button-85 tracking-widest relative top-10 "
         >
           Get New Quote
@@ -47,4 +47,4 @@ function Swami() {
   );
 }
 
-export default Swami;
+export default Abdul;
