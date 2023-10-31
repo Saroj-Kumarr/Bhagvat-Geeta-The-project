@@ -1,34 +1,38 @@
 import React from "react";
 import left from "./Images/left.png";
-import logo from './Images/logo4.png';
-import {GiFlowerEmblem,GiFlowerStar,GiSunflower,GiSpotedFlower } from 'react-icons/gi'
-import {PiFlowerLotusFill} from 'react-icons/pi'
- 
-// GiFlowerEmblem GiFlowerStar GiSunflower GiSpotedFlower  PiFlowerLotusFill
+import logo from "./Images/logo4.png";
+import {
+  GiFlowerEmblem,
+  GiFlowerStar,
+  GiSunflower,
+  GiSpotedFlower,
+} from "react-icons/gi";
+import { PiFlowerLotusFill } from "react-icons/pi";
+import { GiBookAura } from "react-icons/gi";
 
 function Header() {
   return (
-    <div className="krishna flex justify-between items-center px-10 bg-black max-[600px]:relative max-[600px]:w-[113%]">
-      <div>
-        <img className="h-24" src={left} alt="flute" />
+    <div className="green-border krishna flex px-10 bg-black border-4 p-3 justify-between">
+      <div className="flex">
+        <GiBookAura className="green-text green-text text-4xl relative top-[1px]" />
+        <h1 className="text-white ml-2 text-3xl font-bold text-white">Saroj</h1>
+        <h1 className="green-text green-text ml-2 font-bold text-3xl">Kumar</h1>
       </div>
-      <div className="flex justify-center items-center">
-      <GiSunflower  className="text-5xl text-teal-600"/>
-      </div>
-      <div>
-        <img className="h-24" src={logo} alt="logo"/>
-      </div>
-      <div className="flex justify-center items-center">
-      {/* <GiFlowerEmblem className="text-3xl text-green-600"/>
-        <GiFlowerStar  className="text-4xl text-pink-600"/> */}
-        <GiSunflower  className="text-5xl text-teal-600"/>
-        {/* <GiSpotedFlower   className="text-3xl text-pink-600"/>
-        <IoMdFlower  className="text-3xl text-purple-600"/>
-        <PiFlowerLotusFill   className="text-3xl text-red-600"/> */}
 
-
+      <div className="">
+        <ul className="flex">
+          <li className="border-2 border-white green-text bg-pink-600 p-1 font-bold m-2 hover:bg-white hover:text-pink-600 hover:border-pink-600 duration-500 px-2">
+            Pink
+          </li>
+          <li className="border-2 border-white text-white bg-purple-600 p-1 font-bold m-2 hover:bg-white hover:text-pink-600 hover:border-pink-600 duration-500 px-2">
+            Purple
+          </li>
+          <li className="border-2 border-white text-white bg-sky-600 p-1 font-bold m-2 hover:bg-white hover:text-pink-600 hover:border-pink-600 duration-500 px-2">
+            Blue
+          </li>
+          
+        </ul>
       </div>
-      <div><img className="h-24 -rotate-180" src={left} alt="flute" /></div>
     </div>
   );
 }

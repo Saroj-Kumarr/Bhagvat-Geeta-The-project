@@ -23,16 +23,13 @@ function Chanakya() {
       <div className="">
         {quotes && (
           <div className="test h-60 w-[470px] font-bold tracking-widest">
-
             <img
               className="w-full border-2 border-[#01F479] w-[470px]"
               src="https://img.freepik.com/premium-vector/colorful-flowers-background_311284-20.jpg?w=1060"
               alt="border"
             />
 
-            
-
-            <h1 className="relative text-[#F4434D] -top-48 mx-16 left-2">
+            <h1 className="relative text-[#10b981] -top-48 mx-16 left-2">
               <FaQuoteLeft className="inline relative -top-2 text-[#01F479]" />{" "}
               {quotes[0].quote}
               <FaQuoteRight className="inline relative top-[3px] text-[#01F479]" />
