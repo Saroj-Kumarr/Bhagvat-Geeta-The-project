@@ -21,39 +21,42 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
-      },
-      {
-        path: "/Bhagavad gita",
-        element: <Bhagavad />,
-      },
-      {
-        path: "/Chanakya Niti",
-        element: <Chanakya />,
-      },
-      {
-        path: "/Gautam Buddha",
-        element: <Gautam />,
-      },
-      {
-        path: "/Swami Vivekananda",
-        element: <Swami />,
-      },
-      {
-        path: "/Osho",
-        element: <Osho />,
-      },
-      {
-        path: "/Abdul kalam",
-        element: <Abdul />,
-      },
-      {
-        path: "/Life",
-        element: <Life />,
-      },
-      {
-        path: "/Education",
-        element: <Motivation />,
-      },
+      },{
+        path:"/:id",
+        element:<Bhagavad/>
+      }
+      // {
+      //   path: "/Bhagavad gita",
+      //   element: <Bhagavad />,
+      // },
+      // {
+      //   path: "/Chanakya Niti",
+      //   element: <Chanakya />,
+      // },
+      // {
+      //   path: "/Gautam Buddha",
+      //   element: <Gautam />,
+      // },
+      // {
+      //   path: "/Swami Vivekananda",
+      //   element: <Swami />,
+      // },
+      // {
+      //   path: "/Osho",
+      //   element: <Osho />,
+      // },
+      // {
+      //   path: "/Abdul kalam",
+      //   element: <Abdul />,
+      // },
+      // {
+      //   path: "/Life",
+      //   element: <Life />,
+      // },
+      // {
+      //   path: "/Education",
+      //   element: <Motivation />,
+      // },
     ],
   },
 ]);
