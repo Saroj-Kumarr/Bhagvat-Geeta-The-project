@@ -8,9 +8,25 @@ import { useParams } from "react-router";
 function Bhagavad() {
   const [quotes, setQuotes] = useState("");
 
-  const {id}=useParams();
+  const { id } = useParams();
 
-  const bhagvadQuotes = Quotes;
+  if (id == 0) {
+    const storeQuotes = quotes[0];
+  } else if (id == 1) {
+    const storeQuotes = quotes[1];
+  } else if (id == 2) {
+    const storeQuotes = quotes[2];
+  } else if (id == 3) {
+    const storeQuotes = quotes[3];
+  } else if (id == 4) {
+    const storeQuotes = quotes[4];
+  } else if (id == 5) {
+    const storeQuotes = quotes[5];
+  } else if (id == 6) {
+    const storeQuotes = quotes[6];
+  } else {
+    const storeQuotes = quotes[7];
+  }
 
   function getRandomQuote(bhagvadQuotes) {
     const x = Math.floor(Math.random() * 50 + 1);
@@ -42,7 +58,7 @@ function Bhagavad() {
         )}
         //
         <button
-          onClick={() => getRandomQuote(bhagvadQuotes[id])}
+          onClick={() => getRandomQuote(storeQuotes[id])}
           className="border-2 border-teal-600 border-t-2 border-white bg-teal-600  durapink-600 w-full p-1 font-bold  text-white text-lg"
         >
           Get New Quote

@@ -12,12 +12,12 @@ import pic8 from "./Images/pic8.jpg";
 import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 
 function Body() {
+
   const QuoteTypes = [
     {
       type: "Bhagavad gita",
       imgsrc: pic1,
     },
-    ,
     {
       type: "Chanakya Niti",
       imgsrc: pic2,
@@ -53,7 +53,7 @@ function Body() {
       <div className="flex items-center justify-center flex-wrap -mt-6 w-[87%] ml-24 max-[600px]:relative max-[600px]:-left-10">
         {QuoteTypes.map((obj, index) => {
           return (
-            <Link to={"/" +(index)}>
+            <Link to={"/" + (index)}>
               <QuoteBox name={obj.type} imgsrc={obj.imgsrc} />
             </Link>
           );
