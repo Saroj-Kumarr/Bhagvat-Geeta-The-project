@@ -8,19 +8,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-
 
 ::-webkit-scrollbar {
   width: 1px;

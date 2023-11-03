@@ -3,9 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Body from "./Body";
-import Bhagavad from "./Bhagavad";
-
+import Body from "./Components/Body";
+import Bhagavad from "./Components/QuoteComponent";
 
 const appRouter = createBrowserRouter([
   {
@@ -15,11 +14,11 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
-      },{
-        path:"/:id",
-        element:<Bhagavad/>
-      }
-     
+      },
+      {
+        path: "/:id",
+        element: <Bhagavad />,
+      },
     ],
   },
 ]);

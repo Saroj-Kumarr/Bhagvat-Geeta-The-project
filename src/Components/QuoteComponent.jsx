@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { bhagavad } from "./Dataset";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import border from "../src/Images/border.jpg";
 import Quotes from "./Dataset";
 import { useParams } from "react-router";
 
@@ -10,26 +8,30 @@ function Bhagavad() {
 
   const { id } = useParams();
 
+  let storeQuotes = "";
+
+  console.log();
+
   if (id == 0) {
-    const storeQuotes = quotes[0];
+    storeQuotes = Quotes[0];
   } else if (id == 1) {
-    const storeQuotes = quotes[1];
+    storeQuotes = Quotes[1];
   } else if (id == 2) {
-    const storeQuotes = quotes[2];
+    storeQuotes = Quotes[2];
   } else if (id == 3) {
-    const storeQuotes = quotes[3];
+    storeQuotes = Quotes[3];
   } else if (id == 4) {
-    const storeQuotes = quotes[4];
+    storeQuotes = Quotes[4];
   } else if (id == 5) {
-    const storeQuotes = quotes[5];
+    storeQuotes = Quotes[5];
   } else if (id == 6) {
-    const storeQuotes = quotes[6];
+    storeQuotes = Quotes[6];
   } else {
-    const storeQuotes = quotes[7];
+    storeQuotes = Quotes[7];
   }
 
   function getRandomQuote(bhagvadQuotes) {
-    const x = Math.floor(Math.random() * 50 + 1);
+    const x = Math.floor(Math.random() * 100 + 1);
 
     const quote = bhagvadQuotes.filter((obj) => {
       return obj.id == x;
@@ -42,9 +44,9 @@ function Bhagavad() {
     <div className="flex justify-center items-center h-[60vh]">
       <div className="">
         {quotes && (
-          <div className="test h-60 w-[470px] font-bold tracking-widest">
+          <div className="test h-60 w-[490px] font-bold tracking-widest">
             <img
-              className="w-full border-2 border-[#F4434D] w-[470px]"
+              className="w-full border-4 border-teal-600 w-[490px]"
               src="https://img.freepik.com/premium-vector/colorful-flowers-background_311284-20.jpg?w=1060"
               alt="border"
             />
@@ -58,7 +60,7 @@ function Bhagavad() {
         )}
         //
         <button
-          onClick={() => getRandomQuote(storeQuotes[id])}
+          onClick={() => getRandomQuote(storeQuotes)}
           className="border-2 border-teal-600 border-t-2 border-white bg-teal-600  durapink-600 w-full p-1 font-bold  text-white text-lg"
         >
           Get New Quote

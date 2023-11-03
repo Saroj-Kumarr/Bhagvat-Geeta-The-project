@@ -1,13 +1,4 @@
 import React from "react";
-import left from "./Images/left.png";
-import logo from "./Images/logo4.png";
-import {
-  GiFlowerEmblem,
-  GiFlowerStar,
-  GiSunflower,
-  GiSpotedFlower,
-} from "react-icons/gi";
-import { PiFlowerLotusFill } from "react-icons/pi";
 import { GiBookAura } from "react-icons/gi";
 
 function Header() {
