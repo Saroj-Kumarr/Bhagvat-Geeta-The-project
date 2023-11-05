@@ -42,16 +42,16 @@ function Bhagavad() {
 
   return (
     <div className="flex justify-center items-center h-[60vh]">
-      <div className="">
+      <div className="max-[600px]:mt-20">
         {quotes && (
-          <div className="test h-60 w-[490px] font-bold tracking-widest">
+          <div className="test h-60 w-[490px] font-bold tracking-widest max-[600px]:w-full max-[600px]:text-[13px] ">
             <img
               className="w-full border-4 border-teal-600 w-[490px]"
               src="https://img.freepik.com/premium-vector/colorful-flowers-background_311284-20.jpg?w=1060"
               alt="border"
             />
 
-            <h1 className="relative text-[#01F479] -top-48 mx-16 left-2">
+            <h1 className="relative text-[#01F479] -top-48 mx-16 left-2 max-[600px]:mt-8">
               <FaQuoteLeft className="inline relative -top-2 text-[#F4434D]" />{" "}
               {quotes[0].quote}
               <FaQuoteRight className="inline relative top-[3px] text-[#F4434D]" />

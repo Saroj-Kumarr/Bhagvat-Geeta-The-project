@@ -11,7 +11,6 @@ import pic7 from "../Images/pic7.jpg";
 import pic8 from "../Images/pic8.jpg";
 
 function Body() {
-
   const QuoteTypes = [
     {
       type: "Bhagavad gita",
@@ -49,10 +48,10 @@ function Body() {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-wrap -mt-6 w-[87%] ml-24 max-[600px]:relative max-[600px]:-left-10">
+      <div className="flex items-center justify-center flex-wrap -mt-6 w-[87%] ml-24 max-[600px]:relative max-[600px]:-left-10 max-[600px]:ml-16 max-[600px]:mb-28">
         {QuoteTypes.map((obj, index) => {
           return (
-            <Link to={"/" + (index)}>
+            <Link to={"/" + index}>
               <QuoteBox name={obj.type} imgsrc={obj.imgsrc} />
             </Link>
           );
