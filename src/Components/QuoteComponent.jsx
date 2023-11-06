@@ -4,13 +4,15 @@ import Quotes from "./Dataset";
 import { useParams } from "react-router";
 
 function Bhagavad() {
-  const [quotes, setQuotes] = useState("");
+  const [quotes, setQuotes] = useState([{
+    id: "62",
+    quote:
+      "जितना ज्यादा गलतियां हो सके उतनी ज्यादा गलतियां करो। बस एक बात रखना फिर से वही गलती मत करना और देखना, तुम प्रगति कर रहे होगे।  ",
+  }]);
 
   const { id } = useParams();
 
   let storeQuotes = "";
-
-  console.log();
 
   if (id == 0) {
     storeQuotes = Quotes[0];
@@ -43,7 +45,7 @@ function Bhagavad() {
   return (
     <div className="flex justify-center items-center h-[60vh]">
       <div className="max-[600px]:mt-20">
-        {quotes && (
+        {/* {quotes && (
           <div className="test h-60 w-[490px] font-bold tracking-widest max-[600px]:w-full max-[600px]:text-[13px] ">
             <img
               className="w-full border-4 border-teal-600 w-[490px]"
@@ -57,7 +59,20 @@ function Bhagavad() {
               <FaQuoteRight className="inline relative top-[3px] text-[#F4434D]" />
             </h1>
           </div>
-        )}
+        )} */}
+        <div className="test h-60 w-[490px] font-bold tracking-widest max-[600px]:w-full max-[600px]:text-[13px] ">
+          <img
+            className="w-full border-4 border-teal-600 w-[490px]"
+            src="https://img.freepik.com/premium-vector/colorful-flowers-background_311284-20.jpg?w=1060"
+            alt="border"
+          />
+
+          <h1 className="relative text-[#01F479] -top-48 mx-16 left-2 max-[600px]:mt-8">
+            <FaQuoteLeft className="inline relative -top-2 text-[#F4434D]" />{" "}
+            {quotes[0].quote}
+            <FaQuoteRight className="inline relative top-[3px] text-[#F4434D]" />
+          </h1>
+        </div>
         //
         <button
           onClick={() => getRandomQuote(storeQuotes)}
