@@ -31,7 +31,7 @@ function Bhagavad() {
   }
 
   function getRandomQuote(bhagvadQuotes) {
-    const x = Math.floor(Math.random() * 100 + 1);
+    const x = Math.floor(Math.random() * 50 + 1);
 
     const quote = bhagvadQuotes.filter((obj) => {
       return obj.id == x;
