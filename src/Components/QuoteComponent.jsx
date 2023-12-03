@@ -13,6 +13,7 @@ function Bhagavad() {
   const { id } = useParams();
 
   let storeQuotes = "";
+  
 
   if (id == 0) {
     storeQuotes = Quotes[0];
